@@ -24,8 +24,7 @@ void bfs(int n, const vector<vector<int> > &g, const vector<bool> &s, vector<int
     }
 }
 
-int main() {
-    const char *inputFile = "input.txt";
+void solve(const char *inputFile) {
     freopen(inputFile, "r", stdin);
     int n, m;
     cin >> n >> m;
@@ -63,5 +62,10 @@ int main() {
             cout << v << '\n';
         }
     }
+}
+
+int main() {
+    const char *inputFile = "input.txt";
+    solve(inputFile);
     return 0;
 }
